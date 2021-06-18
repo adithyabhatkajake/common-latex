@@ -1,0 +1,65 @@
+% Load variables to ensure that the correct packages are loaded
+\newif\ifacm
+\newif\ifieee
+
+% Math Macros
+\newcommand{\sizeof}[1]{\ensuremath{\vert #1 \vert}\xspace}
+\newcommand{\set}[1]{\ensuremath{\left\{#1\right\}}\xspace}
+\newcommand{\p}[1]{\ensuremath{(#1)}\xspace}
+\newcommand{\bp}[1]{\ensuremath{\left(#1\right)}\xspace}
+\newcommand{\msg}[1]{\ensuremath{\left\langle #1 \right\rangle}\xspace}
+\newcommand{\prob}[1]{\ensuremath{\Pr\left[ #1 \right]}\xspace}
+\def\getsdollar{\mathrel{{\leftarrow}\vcenter{\hbox{\tiny\rmfamily\upshape\$}}}}
+
+% Nodes
+\def\node{\ensuremath{p}\xspace}
+\def\nodes{\ensuremath{\mathcal{P}}\xspace}
+\def\parsenode{\ensuremath{\nodes := \set{\node_1,\node_2,\dots,\node_n}}\xspace}
+\newcommand{\nodei}[1]{\ensuremath{\node_{#1}}\xspace}
+
+% Leader
+\def\leader{\ensuremath{{L}}\xspace}
+\newcommand{\leaderof}[1]{\ensuremath{\leader_{#1}}\xspace}
+
+% Adversary
+\def\adv{\ensuremath{\mathcal{A}}\xspace} % Adversary
+\def\secparam{\ensuremath{\kappa}\xspace} % Security Parameter
+
+% Network notation
+\def\delay{\ensuremath{\Delta}\xspace}    % Worst case network delay
+
+
+% Cryptographic notations
+\def\group{\ensuremath{G}\xspace}
+\def\gone{\ensuremath{\group_{1}}\xspace}
+\def\gtwo{\ensuremath{\group_{2}}\xspace}
+\def\gtarget{\ensuremath{\group_{T}}\xspace}
+\def\order{\ensuremath{p}\xspace}
+\def\zp{\ensuremath{\mathbb{Z}_{\order}}\xspace}
+
+% Related Work table macros
+\definecolor{yescolor}{HTML}{026378}
+\def\yes{\textcolor{yescolor}{\checkmark}}
+\def\no{\textcolor{red}{\ding{55}}}
+
+% Formatting macros
+\renewcommand{\paragraph}[1]{\noindent \textbf{#1.\xspace}}
+\newcommand{\etal}{\emph{et al.}}
+\newcommand{\unbox}{\floatstyle{plain}\restylefloat{figure}}
+\newcommand{\rebox}{\floatstyle{boxed}\restylefloat{figure}}
+\def\scalefigure{1.0}
+
+% All the different sizes
+{
+\tiny
+\scriptsize
+\footnotesize
+\small
+\normalsize
+\large
+\Large
+\LARGE
+\huge
+\Huge
+}
+
